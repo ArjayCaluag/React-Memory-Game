@@ -11,7 +11,7 @@ class App extends Component {
   state = {
     topScore: 0,
     score: 0,
-    teams,
+    teams: teams,
     clickedTeams: [] ,
   };
 
@@ -29,9 +29,15 @@ class App extends Component {
       <div>
        
         <NavBar score = {this.state.score} />
-        {/* <SubNavBar></SubNavBar>
-        <TeamCard></TeamCard>
-        <Footer></Footer> */}
+
+
+        {this.state.teams.map(teams => (
+          <TeamCard
+            id={teams.id}
+            image={teams.image}
+          />
+        ))}
+       
       </div>
     );
   }

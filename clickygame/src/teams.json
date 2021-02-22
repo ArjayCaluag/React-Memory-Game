@@ -1,21 +1,63 @@
 [
     {
       "id": 1,
-      "name": "Atlanta Hawks",
-      "image":
-        "https://content.sportslogos.net/logos/6/220/thumbs/22081902021.gif"
-    },
-    {
-      "id": 2,
-      "name": "Bostin Celtics",
       "image":
         "https://content.sportslogos.net/logos/6/213/thumbs/slhg02hbef3j1ov4lsnwyol5o.gif"
     },
     {
-      "id": 3,
-      "name": "Brooklyn Nets",
+      "id": 2,
       "image":
         "https://content.sportslogos.net/logos/6/3786/thumbs/hsuff5m3dgiv20kovde422r1f.gif"
+    },
+    {
+      "id": 3,
+      "image":
+        "https://content.sportslogos.net/logos/6/220/thumbs/22081902021.gif"
+    },
+    {
+      "id": 4,
+      "image":
+        "https://content.sportslogos.net/logos/6/224/thumbs/22448122018.gif"
+    },
+    {
+      "id": 5,
+      "image":
+        "https://content.sportslogos.net/logos/6/237/thumbs/uig7aiht8jnpl1szbi57zzlsh.gif"
+    },
+    {
+      "id": 6,
+      "image":
+        "https://content.sportslogos.net/logos/6/230/thumbs/23068302020.gif"
+    },
+    {
+      "id": 7,
+      "image":
+        "https://content.sportslogos.net/logos/6/225/thumbs/22582752016.gif"
+    },
+    {
+      "id": 8,
+      "image":
+        "https://content.sportslogos.net/logos/6/214/thumbs/burm5gh2wvjti3xhei5h16k8e.gif"
+    },
+    {
+      "id": 9,
+      "image":
+        "https://content.sportslogos.net/logos/6/239/thumbs/23997252018.gif"
+    },
+    {
+      "id": 10,
+      "image":
+        "https://content.sportslogos.net/logos/6/219/thumbs/21956712016.gif"
+    },
+    {
+      "id": 11,
+      "image":
+        "https://content.sportslogos.net/logos/6/234/thumbs/23467492017.gif"
+    },
+    {
+      "id": 12,
+      "image":
+        "https://content.sportslogos.net/logos/6/221/thumbs/hj3gmh82w9hffmeh3fjm5h874.gif"
     }
   ]
   

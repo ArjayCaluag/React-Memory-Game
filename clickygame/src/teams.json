@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Atlanta Hawks",
+      "image":
+        "https://content.sportslogos.net/logos/6/220/thumbs/22081902021.gif"
+    },
+    {
+      "id": 2,
+      "name": "Bostin Celtics",
+      "image":
+        "https://content.sportslogos.net/logos/6/213/thumbs/slhg02hbef3j1ov4lsnwyol5o.gif"
+    },
+    {
+      "id": 3,
+      "name": "Brooklyn Nets",
+      "image":
+        "https://content.sportslogos.net/logos/6/3786/thumbs/hsuff5m3dgiv20kovde422r1f.gif"
+    }
+  ]
+  

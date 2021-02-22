@@ -27,11 +27,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Wrapper></Wrapper>
+       
         <NavBar score = {this.state.score} />
-        <SubNavBar></SubNavBar>
+        {/* <SubNavBar></SubNavBar>
         <TeamCard></TeamCard>
-        <Footer></Footer>
+        <Footer></Footer> */}
       </div>
     );
   }

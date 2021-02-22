@@ -6,6 +6,7 @@ import SubNavBar from "./components/SubNavBar";
 import TeamCard from "./components/TeamCard";
 import React, {Component} from "react"
 import teams from "./teams.json";
+import Wrapper from "./components/Wrapper"
 
 class App extends Component {
   state = {
@@ -30,14 +31,14 @@ class App extends Component {
        
         <NavBar score = {this.state.score} />
 
-
+        <Wrapper>
         {this.state.teams.map(teams => (
           <TeamCard
             id={teams.id}
             image={teams.image}
           />
         ))}
-       
+       </Wrapper>
       </div>
     );
   }

@@ -1,13 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import SubNavBar from "./components/SubNavBar";
 import TeamCard from "./components/TeamCard";
 import React, { Component } from "react";
 import teams from "./teams.json";
 import Wrapper from "./components/Wrapper";
 
+// Initial Scores
 let score = 0;
 let topScore = 0;
 
@@ -17,11 +15,6 @@ class App extends Component {
     score: 0,
     teams: teams,
   };
-
-  // imageClick method (Math.random randomzie images order , score increment method, push to clickedTeam array )
-  // endGame method
-  // .map() to render card
-  // 5 different props per card
 
   imageClick = (id) => {
     const teams = this.state.teams;

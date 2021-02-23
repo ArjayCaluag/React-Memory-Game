@@ -65,9 +65,7 @@ class App extends Component {
     return (
       <div>
         <NavBar score={this.state.score} topScore={this.state.topScore} />
-        
         <Jumbotron alertMsg = {this.state.alertMsg}/>
-
         <Wrapper>
           {this.state.teams.map((teams) => (
             <TeamCard

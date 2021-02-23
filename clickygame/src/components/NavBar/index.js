@@ -21,7 +21,7 @@ function NavBar(props) {
           <li> Nba Clicky Game</li>
           <li> Click an image to begin!</li>
           <li>
-            Score: {props.Score}| TopScore: {props.TopScore}
+            Score: {props.score}| TopScore: {props.topScore}
           </li>
         </ul>
       </nav>

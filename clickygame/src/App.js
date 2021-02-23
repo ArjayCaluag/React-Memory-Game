@@ -9,12 +9,14 @@ import Jumbotron from "./components/jumbotron"
 // Initial Scores
 let score = 0;
 let topScore = 0;
+let alertMsg = ""
 
 class App extends Component {
   state = {
     topScore: 0,
     score: 0,
     teams: teams,
+    alertMsg
   };
 
   imageClick = (id) => {
@@ -26,6 +28,8 @@ class App extends Component {
     if (clickedTeam[0].clicked) {
       score = 0;
       console.log(score);
+      alertMsg = "You lose! Try again."
+      
 
       // teamCard is initially set to false
       for (let i = 0; i < teams.length; i++) {
@@ -33,12 +37,14 @@ class App extends Component {
       }
       this.setState({ score });
       this.setState({ teams });
+      this.setState({alertMsg})
 
       // increment score by 1 everytime a new card is clicked
     } else if (score <= 12) {
       clickedTeam[0].clicked = true;
       score++;
       console.log(score);
+      alertMsg = "You are correct!"
     }
     // conditional statement to set each new top score
     if (score > topScore) {
@@ -52,13 +58,15 @@ class App extends Component {
     });
     this.setState({teams});
     this.setState({score})
+    this.setState({alertMsg})
   };
 
   render() {
     return (
       <div>
         <NavBar score={this.state.score} topScore={this.state.topScore} />
-        <Jumbotron/>
+        
+        <Jumbotron alertMsg = {this.state.alertMsg}/>
 
         <Wrapper>
           {this.state.teams.map((teams) => (

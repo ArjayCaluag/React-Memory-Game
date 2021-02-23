@@ -24,7 +24,6 @@ class App extends Component {
   // 5 different props per card
 
   imageClick = (id) => {
-
     const teams = this.state.teams;
     // Creates an array with the teams that have been clicked.
     const clickedTeam = teams.filter((team) => team.id === id);
@@ -32,28 +31,32 @@ class App extends Component {
     // If a team is clicked again, reset score to 0
     if (clickedTeam[0].clicked) {
       score = 0;
-      console.log(score)
-      
+      console.log(score);
+
       // teamCard is initially set to false
       for (let i = 0; i < teams.length; i++) {
         teams[i].clicked = false;
       }
       this.setState({ score });
       this.setState({ teams });
-    
+
       // increment score by 1 everytime a new card is clicked
-    }  else if (score <= 12) {
+    } else if (score <= 12) {
       clickedTeam[0].clicked = true;
       score++;
-      console.log(score)
-    }}
+      console.log(score);
+    }
+    if (score > topScore) {
+      topScore = score;
+      this.setState({ topScore });
+      this.setState({ score })
+    }
+  };
 
-    
   render() {
     return (
       <div>
-        <NavBar score={this.state.score} 
-                topScore={this.state.topScore}/>
+        <NavBar score={this.state.score} topScore={this.state.topScore} />
 
         <Wrapper>
           {this.state.teams.map((teams) => (

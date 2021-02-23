@@ -4,6 +4,7 @@ import TeamCard from "./components/TeamCard";
 import React, { Component } from "react";
 import teams from "./teams.json";
 import Wrapper from "./components/Wrapper";
+import Jumbotron from "./components/jumbotron"
 
 // Initial Scores
 let score = 0;
@@ -57,6 +58,7 @@ class App extends Component {
     return (
       <div>
         <NavBar score={this.state.score} topScore={this.state.topScore} />
+        <Jumbotron/>
 
         <Wrapper>
           {this.state.teams.map((teams) => (

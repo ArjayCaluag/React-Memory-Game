@@ -46,11 +46,18 @@ class App extends Component {
       score++;
       console.log(score);
     }
+    // conditional statement to set each new top score
     if (score > topScore) {
       topScore = score;
       this.setState({ topScore });
-      this.setState({ score })
+    
     }
+    // Randomize team cards every time one is clicked
+    teams.sort(function (a, b) {
+      return 0.5 - Math.random();
+    });
+    this.setState({teams});
+    this.setState({score})
   };
 
   render() {
